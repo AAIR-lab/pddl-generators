@@ -174,7 +174,7 @@ void usage( void ) {
 }
 
 Bool process_command_line( int argc, char *argv[] ) {
-    int seed = -1;
+    seed = -1;
     char option;
 
     while ( --argc && ++argv ) {
