@@ -62,7 +62,7 @@ Bool process_command_line( int argc, char *argv[] );
 int gobjects;
 int grooms;
 int grobots;
-
+int seed = -1;
 
 int main( int argc, char *argv[] )
 
@@ -91,6 +91,7 @@ int main( int argc, char *argv[] )
 
   /* header
    */
+  printf("; Generated using args: -n %d -r %d -o %d -s %d\n", grobots, grooms, gobjects, seed);
   printf("(define (problem gripper-%d-%d-%d)", grobots, grooms, gobjects);
   printf("\n(:domain gripper-strips)");
 
